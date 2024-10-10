@@ -8,5 +8,7 @@
 <h1><%= "Hello!" %></h1>
 <br/>
 <a href="/admin/categories">categories</a>
+<br>
+<a href="/admin/videos">video</a>
 </body>
 </html>
