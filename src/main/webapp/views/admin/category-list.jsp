@@ -22,6 +22,9 @@
                 <c:if test="${cate.image.length() >= 5 && !cate.image.substring(0, 5).equals('https')}">
                     <c:url value="/image?filename=${cate.image}" var="imgUrl"></c:url>
                 </c:if>
+                <c:if test="${cate.image.length() >= 5 && cate.image.substring(0, 5).equals('https')}">
+                    <c:url value="${cate.image}" var="imgUrl"></c:url>
+                </c:if>
                 <td style="text-align: center;"><img height="150" width="200" src="${imgUrl}"/></td>
                 <td style="text-align: center;">${cate.categoryName }</td>
                 <td style="text-align: center;">
